@@ -39,7 +39,7 @@ int main()
 	write(1 , "write a number" , 14);
 
 	read( 0 , &i , 1);
-	if (c == '-') 
+	if (i == '-') 
 	       	ft_is_negative(-1);
 	else 
 	       	ft_is_negative(1);
