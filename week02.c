@@ -10,15 +10,14 @@ char  i = 'a';
 	}
 }	*/
 
-void ft_is_negative(int *i ){
+void ft_is_negative(int i ){
 
-while(read(1, &i , 1)){
 	if(i>= 0)
-		write(1 , 'P' , 1);
+		write(1 , "P\n" , 2);
 	else 
-		write(1 , 'N' , 1);
+		write(1 , "N\n" , 2);
 
-	}
+
 }
 
 /*void ft_print_reverse_alphabet(void)
@@ -32,10 +31,18 @@ char  i = 'z';
 }*/
 
 int main()
-{ int i;
+{
+       	char i;
 //	ft_print_alphabet();
 //	ft_print_reverse_alphabet();
-        write(1 , "write a number" , 14);
-        ft_is_negative(i);	
+
+	write(1 , "write a number" , 14);
+
+	read( 0 , &i , 1);
+	if (c == '-') 
+	       	ft_is_negative(-1);
+	else 
+	       	ft_is_negative(1);
+
 	return 0;
 }	
