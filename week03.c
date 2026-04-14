@@ -1,5 +1,5 @@
 #include <unistd.h>
-const int MAX = 100;//detrmain for have a limit number of strings
+const int MAX = 100;//determine for have a limit number of strings
 
 void ft_putstr(){
 
